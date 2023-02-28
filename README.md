@@ -1,2 +1,1 @@
-echo # KhepraSite
-echo # KhepraSite
+# Khepra Ptah's Website
