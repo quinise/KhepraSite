@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>About Khepra</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/global.css"/>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/about.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  <body>
+    <%- include('partials/nav') %>
+    <div class="container d-flex flex-column">
+      <svg viewBox="0 0 30 4" xmlns="http://www.w3.org/2000/svg">
+        <path id="MyPath" fill="none" d="M 0 5 Q 15 -5 30 5" pathLength="2" />
+        <text class="headding is-1" font-size="2" dominant-baseline="hanging" text-anchor="middle">
+          <textPath href="#MyPath" startOffset="1">
+            About the Work
+          </textPath>
+        </text>
+      </svg>
+      <svg viewBox="0 0 250 130" height="10%" width="50%" color-interpolation-filters="sRGB">
+        <defs>
+          <filter id="fade-out">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur-source"/>
+      
+            <feComponentTransfer result="fader">
+              <feFuncA type="gamma" exponent=".5" amplitude="2"/>
+            </feComponentTransfer>
+    
+            <feComposite operator="in" in="fader" in2="SourceGraphic"/>    
+          </filter>
+        </defs>
+        <g filter="url(#fade-out)">
+          <path d="M 0 50 q 150 -100 300 10" stroke-linecap="round" stroke="#0DD6F1" stroke-width="7" fill="none" />
+          <path d="M 0 50 q 150 -100 300 10" stroke-linecap="round" fill="none" stroke="white" stroke-width="3" stroke-dasharray="50, 200, 109"/>
+        </g>
+      </svg>
+      <div id="about-section">
+        <img class="about-img" src="/images/ile-pic-1.png" alt="TODO">
+        <p class="about-paragraph"> We are a holistic healing institute that provides the necessary tools to positively enhance lives. Our mission is to assist in creating and maintaining wellness, globally and locally, within our respective communities. We strive to provide renewed vitality and optimum quality of life through traditional African-centered sciences and other alternative healing disciplines.</p>
+      </div>
+      <div class="row">
+        <%- include('partials/footer') %>
+      </div>
+    </div>
+  </body>
+</html>

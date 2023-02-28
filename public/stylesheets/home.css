@@ -1,0 +1,53 @@
+.container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.headers {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.headding {
+    display: block;
+    fill: #0DD6F1;
+}
+
+.subtitle {
+    fill: black;
+    display: block;
+    height: 30%;
+}
+
+.highlight {
+    display: block;
+    height: 25%;
+}
+
+path {
+    fill: transparent;
+}
+
+.introduction-img {
+    display: block;
+    object-fit: contain;
+}
+
+.intro-row {
+    height: 25%;
+}
+
+img {
+    display: block;
+    height: 70%;
+}
