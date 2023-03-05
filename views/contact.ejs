@@ -13,18 +13,20 @@
 </head>
   <body>
   <%- include('partials/nav') %>
-  <div class="container">
+  <div class="container col">
     <div class="row">
       <h1 class="col intro">Contact Khepra</h1>
     </div>
     <%- include('partials/dash') %>
-    <div class="contact-image-container">
-      <a class="row" href="mailto:m.quinise@gmail.com?subject="New Website Inquiry"&body=body">Contact</a>
-    </div><br>
-    <h3>Call or Text 206.xxx.xxxx</h3>
-    <div class="row">
-      <%- include('partials/footer') %>
-    </div>
+      <div class="icons row">
+        <a class="icon" href="https://www.tiktok.com/@khepra_ptah360"><img src="/images/tiktok.png"></a>
+        <a class="icon" href="https://www.youtube.com/@KHMWST"><img src="/images/youtube.png"></a>
+        <a class="icon" href="mailto:TODO?subject="New Website Inquiry"&body=body"><img src="/images/email.png"></a>
+      </div>
+      <h3>Call or Text (206)-960-7999</h3>
+      <div class="row">
+        <%- include('partials/footer') %>
+      </div>
   </div>
   </body>
 </html>
